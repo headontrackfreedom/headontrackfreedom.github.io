@@ -167,21 +167,41 @@
 
                     </div>
 
+
+					<script>
+						function gotowhatsapp() {
+							
+							var name = document.getElementById("name").value;
+							var phone = document.getElementById("tel").value;
+							var email = document.getElementById("email").value;
+							var service = document.getElementById("service").value;
+							console.log(name);
+							console.log(phone);
+							console.log(email);
+							console.log(service);
+
+
+
+							var url = "https://api.whatsapp.com/send?phone=5529039965&text="+ "Nombre: " + name + "%0a" + "Tel: " + phone + "%0a" + "Email: " + email  + "%0a" + "Servicio: " + service; 
+							window.open(url, '_blank').focus();
+						}
+						</script>
+
                     <div class="contact-form">
                         <h3>DÉJANOS TUS DATOS Y NOSOTROS TE BRINDAMOS ASESORÍA COMPLETA</h3>
                         <form class="consultation-form">
-                            <input type="text" placeholder="Nombre completo" required>
-                            <input type="email" placeholder="Correo electrónico" required>
+                            <input id="name" type="text" placeholder="Nombre completo" required>
+                            <input id="email" type="email" placeholder="Correo electrónico" required>
                             <div class="phone-input">
                                 <select class="country-code">
                                     <!-- <option value="+57">🇨🇴 +57</option>
                                     <option value="+1">🇺🇸 +1</option> -->
                                     <option value="+52">🇲🇽 +52</option>
                                 </select>
-                                <input type="tel" placeholder="Teléfono" required>
+                                <input id="tel" type="tel" placeholder="Teléfono" required>
                             </div>
-                            <input type="text" placeholder="Ciudad" required>
-                            <select required>
+                            <input id="city" type="text" placeholder="Ciudad" required>
+                            <select id="service" required>
                                 <option value="MASAJE REDUCTIVO">Masaje Reductivo</option>
                                 <option value="Limpieza Facial profunda">Limpieza Facial profunda</option>
                                 <option value="Maderoterapia">Maderoterapia</option>
@@ -194,7 +214,7 @@
 								<option value="Electroestimulacion">Electroestimulación</option>
 
                             </select>
-                            <button type="submit" class="btn btn-primary">Enviar</button>
+                            <button onclick="gotowhatsapp()" type="submit" class="btn btn-primary">Enviar</button>
                         </form>
                     </div>
                 </div>
