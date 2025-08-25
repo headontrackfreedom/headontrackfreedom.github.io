@@ -237,55 +237,322 @@
         </section>
 
         <!-- Procedure Cards -->
+
+		<script>
+			function showcard(id) {
+
+				var card = document.getElementById(id);
+				switch (id) {
+				case "masaje_reductivo_img":
+					card.style.display = "none";
+					var cardinfo = document.getElementById("masaje_reductivo_info");
+					cardinfo.style.display = "block";
+			
+					break;
+				case "masaje_reductivo_info":
+					card.style.display = "none";
+					var cardinfo = document.getElementById("masaje_reductivo_img");
+					cardinfo.style.display = "block";
+					
+					break;
+
+				case "limpieza_facial_img":
+					card.style.display = "none";
+					var cardinfo = document.getElementById("limpieza_facial_info");
+					cardinfo.style.display = "block";
+			
+					break;
+				case "limpieza_facial_info":
+					card.style.display = "none";
+					var cardinfo = document.getElementById("limpieza_facial_img");
+					cardinfo.style.display = "block";
+					
+					break;
+
+				case "maderoterapia_img":
+					card.style.display = "none";
+					var cardinfo = document.getElementById("maderoterapia_info");
+					cardinfo.style.display = "block";
+			
+					break;
+				case "maderoterapia_info":
+					card.style.display = "none";
+					var cardinfo = document.getElementById("maderoterapia_img");
+					cardinfo.style.display = "block";
+					
+					break;
+
+				case "vacum_img":
+					card.style.display = "none";
+					var cardinfo = document.getElementById("vacum_info");
+					cardinfo.style.display = "block";
+			
+					break;
+				case "vacum_info":
+					card.style.display = "none";
+					var cardinfo = document.getElementById("vacum_img");
+					cardinfo.style.display = "block";
+					
+					break;
+
+				case "cavitacion_img":
+					card.style.display = "none";
+					var cardinfo = document.getElementById("cavitacion_info");
+					cardinfo.style.display = "block";
+			
+					break;
+
+				case "cavitacion_info":
+					card.style.display = "none";
+					var cardinfo = document.getElementById("cavitacion_img");
+					cardinfo.style.display = "block";
+					
+					break;
+
+				case "lipolaser_img":
+					card.style.display = "none";
+					var cardinfo = document.getElementById("lipolaser_info");
+					cardinfo.style.display = "block";
+			
+					break;
+
+				case "lipolaser_info":
+					card.style.display = "none";
+					var cardinfo = document.getElementById("lipolaser_img");
+					cardinfo.style.display = "block";
+					
+					break;
+
+
+				case "gluteos_img":
+					card.style.display = "none";
+					var cardinfo = document.getElementById("gluteos_info");
+					cardinfo.style.display = "block";
+			
+					break;
+
+				case "gluteos_info":
+					card.style.display = "none";
+					var cardinfo = document.getElementById("gluteos_img");
+					cardinfo.style.display = "block";
+					
+					break;
+
+				case "relajante_img":
+					card.style.display = "none";
+					var cardinfo = document.getElementById("relajante_info");
+					cardinfo.style.display = "block";
+			
+					break;
+
+				case "relajante_info":
+					card.style.display = "none";
+					var cardinfo = document.getElementById("relajante_img");
+					cardinfo.style.display = "block";
+					
+					break;
+
+
+				case "radiofrecuencia_img":
+					card.style.display = "none";
+					var cardinfo = document.getElementById("radiofrecuencia_info");
+					cardinfo.style.display = "block";
+			
+					break;
+
+				case "radiofrecuencia_info":
+					card.style.display = "none";
+					var cardinfo = document.getElementById("radiofrecuencia_img");
+					cardinfo.style.display = "block";
+					
+					break;
+
+
+				case "electroestimulacion_img":
+					card.style.display = "none";
+					var cardinfo = document.getElementById("electroestimulacion_info");
+					cardinfo.style.display = "block";
+			
+					break;
+
+				case "electroestimulacion_info":
+					card.style.display = "none";
+					var cardinfo = document.getElementById("electroestimulacion_img");
+					cardinfo.style.display = "block";
+					
+					break;
+
+					
+		
+		
+				default:
+					// Code to execute if no case matches the expression
+				}
+							
+			
+			}
+
+
+		</script>
         <section class="procedure-cards">
             <div class="container">
                 <div class="cards-grid">
-                    <div class="procedure-card">
-                        <img src="src/tratamiento-de-masaje-reductivo.jpeg" alt="Megalipólisis Láser">
+
+
+                    <div id="masaje_reductivo_img" class="procedure-card" onclick="showcard(this.id);">
+                        <img src="src/tratamiento-de-masaje-reductivo.jpeg" alt="Masaje Reductivo">
                         <h3>Masaje Reductivo</h3>
                     </div>
-                    <div class="procedure-card">
-                        <img src="src/limpieza facial.jpg" alt="Mamoplastia">
+
+					<div style="display: none;" id="masaje_reductivo_info" onclick="showcard(this.id);" class="procedure-card">                        
+                        <h3>Masaje Reductivo</h3>
+						<p>Tiempo de aplicación</p>
+						<p>Qué es?</p>
+						<p>Qué contiene?</p>
+                    </div>
+
+                    <div id="limpieza_facial_img" class="procedure-card" onclick="showcard(this.id);">
+                        <img src="src/limpieza facial.jpg" alt="Limpieza facial">
                         <h3>Limpieza Facial profunda</h3>
                     </div>
-					 <div class="procedure-card">
-                        <img src="src/maderoterapia.jpg" alt="Mamoplastia">
+
+					<div style="display: none;" id="limpieza_facial_info" onclick="showcard(this.id);" class="procedure-card">                        
+                        <h3>Limpieza Facial</h3>
+						<p>Tiempo de aplicación</p>
+						<p>Qué es?</p>
+						<p>Qué contiene?</p>
+                    </div>
+
+					 <div id="maderoterapia_img" class="procedure-card" onclick="showcard(this.id);">
+                        <img src="src/maderoterapia.jpg" alt="Maderoterapia">
                         <h3>Maderoterapia</h3>
                     </div>
-					 <div class="procedure-card">
-                        <img src="src/vacum.jpg" alt="Mamoplastia">
+					
+					<div style="display: none;" id="maderoterapia_info" onclick="showcard(this.id);" class="procedure-card">                        
+                        <h3>Maderoterapia</h3>
+						<p>Tiempo de aplicación</p>
+						<p>Qué es?</p>
+						<p>Qué contiene?</p>
+                    </div>
+
+
+					 <div  id="vacum_img" class="procedure-card"  onclick="showcard(this.id);">
+                        <img src="src/vacum.jpg" alt="Vacum">
                         <h3>Vacum</h3>
                     </div>
 
-					<div class="procedure-card">
-                        <img src="src/cavitacion.jpg" alt="Mamoplastia">
+					<div style="display: none;" id="vacum_info" onclick="showcard(this.id);" class="procedure-card">                        
+                        <h3>Vacum</h3>
+						<p>Tiempo de aplicación</p>
+						<p>Qué es?</p>
+						<p>Qué contiene?</p>
+                    </div>
+
+
+
+					<div id="cavitacion_img" class="procedure-card" onclick="showcard(this.id);">
+                        <img src="src/cavitacion.jpg" alt="Cavitación">
                         <h3>Cavitación</h3>
                     </div>
 
-                    <div class="procedure-card">
-                        <img src="https://ext.same-assets.com/3090083198/3680759088.jpeg" alt="Lipólisis Láser">
-                        <h3>Lipolaser</h3>
-                    </div>
-                    <div class="procedure-card">
-                        <img src="https://ext.same-assets.com/3090083198/2716525160.jpeg" alt="Pexia Glútea">
-                        <h3>Levantamiento de Glúteos</h3>
+					<div style="display: none;" id="cavitacion_info" onclick="showcard(this.id);" class="procedure-card">                        
+                        <h3>Cavitación</h3>
+						<p>Tiempo de aplicación</p>
+						<p>Qué es?</p>
+						<p>Qué contiene?</p>
                     </div>
 
+
+                    <div id="lipolaser_img" class="procedure-card"  onclick="showcard(this.id);">
+                        <img src="https://ext.same-assets.com/3090083198/3680759088.jpeg" alt="Lipolaser">
+                        <h3>Lipolaser</h3>
+                    </div>
+
+					<div style="display: none;" id="lipolaser_info" onclick="showcard(this.id);" class="procedure-card">                        
+                        <h3>Lipolaser</h3>
+						<p>Tiempo de aplicación</p>
+						<p>Qué es?</p>
+						<p>Qué contiene?</p>
+                    </div>
+
+
+
+                    <div   id="gluteos_img" class="procedure-card" onclick="showcard(this.id);">
+                        <img src="https://ext.same-assets.com/3090083198/2716525160.jpeg" alt="Levantamiento de Glúteos">
+                        <h3>Levantamiento de Glúteos</h3>
+                    </div>
 					
-                    <div class="procedure-card">
-                        <img src="src/masaje relajante.jpg" alt="Lipólisis Láser">
+
+					<div style="display: none;" id="gluteos_info" onclick="showcard(this.id);" class="procedure-card">                        
+                        <h3>Levantamiento de Glúteos</h3>
+						<p>Tiempo de aplicación</p>
+						<p>Qué es?</p>
+						<p>Qué contiene?</p>
+                    </div>
+
+
+                    <div  id="relajante_img" class="procedure-card"  onclick="showcard(this.id);">
+                        <img src="src/masaje relajante.jpg" alt="Masaje Relajante">
                         <h3>Masaje Relajante</h3>
                     </div>
 
-					  <div class="procedure-card">
-                        <img src="src/radiofrecuencia.png" alt="Lipólisis Láser">
+					<div style="display: none;" id="relajante_info" onclick="showcard(this.id);" class="procedure-card">                        
+                        <h3>Masaje Relajante</h3>
+						<p>Tiempo de aplicación</p>
+						<p>Qué es?</p>
+						<p>Qué contiene?</p>
+                    </div>
+
+
+					<div  id="radiofrecuencia_img" class="procedure-card"  onclick="showcard(this.id);">
+                        <img src="src/radiofrecuencia.png" alt="Radiofrecuencia">
                         <h3>Radiofrecuencia</h3>
                     </div>
 
-						  <div class="procedure-card">
-                        <img src="src/electroestimulacion.jpg" alt="Lipólisis Láser">
+
+					<div style="display: none;" id="radiofrecuencia_info" onclick="showcard(this.id);" class="procedure-card">                        
+                        <h3>Radiofrecuencia</h3>
+						<p>Tiempo de aplicación</p>
+						<p>Qué es?</p>
+						<p>Qué contiene?</p>
+                    </div>
+
+
+					<div  id="electroestimulacion_img" class="procedure-card"  onclick="showcard(this.id);">
+                        <img src="src/electroestimulacion.jpg" alt="Electroestimulación">
                         <h3>Electroestimulación</h3>
                     </div>
+
+
+					
+					<div style="display: none;" id="electroestimulacion_info" onclick="showcard(this.id);" class="procedure-card">                        
+                        <h3>Electroestimulación</h3>
+						<p>Tiempo de aplicación</p>
+						<p>Qué es?</p>
+						<p>Qué contiene?</p>
+                    </div>
+
+
+
+
+
+
+					<div  id="hollywood_img" class="procedure-card"  onclick="showcard(this.id);">
+                        <img src="src/electroestimulacion.jpg" alt="Hollywood Peel">
+                        <h3>Hollywood Peel</h3>
+                    </div>
+
+					<div  id="diodo_img" class="procedure-card"  onclick="showcard(this.id);">
+                        <img src="src/electroestimulacion.jpg" alt="Rejuvenecimiento Laser Diodo">
+                        <h3>Rejuvenecimiento Laser Diodo</h3>
+                    </div>
+
+					<div  id="remocion_img" class="procedure-card"  onclick="showcard(this.id);">
+                        <img src="src/electroestimulacion.jpg" alt="Remoción Laser">
+                        <h3>Remoción Laser</h3>
+                    </div>
+
+
                 </div>
             </div>
         </section>
