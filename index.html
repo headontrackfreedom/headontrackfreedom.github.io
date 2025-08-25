@@ -382,6 +382,51 @@
 					
 					break;
 
+
+				case "hollywood_img":
+					card.style.display = "none";
+					var cardinfo = document.getElementById("hollywood_info");
+					cardinfo.style.display = "block";
+			
+					break;
+
+				case "hollywood_info":
+					card.style.display = "none";
+					var cardinfo = document.getElementById("hollywood_img");
+					cardinfo.style.display = "block";
+					
+					break;
+
+
+				case "diodo_img":
+					card.style.display = "none";
+					var cardinfo = document.getElementById("diodo_info");
+					cardinfo.style.display = "block";
+			
+					break;
+
+				case "diodo_info":
+					card.style.display = "none";
+					var cardinfo = document.getElementById("diodo_img");
+					cardinfo.style.display = "block";
+					
+					break;
+
+
+				case "remocion_img":
+					card.style.display = "none";
+					var cardinfo = document.getElementById("remocion_info");
+					cardinfo.style.display = "block";
+			
+					break;
+
+				case "remocion_info":
+					card.style.display = "none";
+					var cardinfo = document.getElementById("remocion_img");
+					cardinfo.style.display = "block";
+					
+					break;
+
 					
 		
 		
@@ -406,9 +451,15 @@
 
 					<div style="display: none;" id="masaje_reductivo_info" onclick="showcard(this.id);" class="procedure-card">                        
                         <h3>Masaje Reductivo</h3>
-						<p>Tiempo de aplicación</p>
+						<p style="margin: 18px; font-size: small;">
+							Una de nuestras especialistas aplica masaje para combatir y eliminar la acumulación de grasa. Además, favorece la expulsión de toxinas, beneficia el flujo sanguíneo y reafirma la zona tratada. <br>
+								➡️SIN REBOTE <br>
+								➡️SIN EFECTOS SECUNDARIOS <br>
+								➡️REDUCES GRASA CORPORAL EN LAS ZONAS QUE NECESITAS
+						</p>
+						<!-- <p>Tiempo de aplicación</p>
 						<p>Qué es?</p>
-						<p>Qué contiene?</p>
+						<p>Qué contiene?</p> -->
                     </div>
 
                     <div id="limpieza_facial_img" class="procedure-card" onclick="showcard(this.id);">
@@ -418,9 +469,26 @@
 
 					<div style="display: none;" id="limpieza_facial_info" onclick="showcard(this.id);" class="procedure-card">                        
                         <h3>Limpieza Facial</h3>
-						<p>Tiempo de aplicación</p>
+
+						<p style="margin: 18px; font-size: x-small;">
+							1.  Limpieza: Se aplica un limpiador facial para eliminar las impurezas y los residuos de la piel. <br>
+
+							2.  Exfoliación: Se utiliza un exfoliante para eliminar las células muertas de la piel y mejorar su textura. <br>
+
+							3.  Aplicación de vapor: Se aplica vapor para abrir los poros y permitir una limpieza más profunda. <br>
+
+							4.  Extracción de impurezas: Se extraen las impurezas y los residuos de la piel utilizando técnicas específicas. <br>
+
+							5.  Aplicación de mascarilla: Se aplica una mascarilla para hidratar y nutrir la piel. <br>
+
+							6.  Hidratación: Se aplica un producto hidratante para mantener la piel hidratada y suave. <br>
+
+							7. Bloqueador : Se aplica un protector solar dependiendo tú tipo de piel para proteger de los rayos  UV , y UVA.
+
+						</p>
+						<!-- <p>Tiempo de aplicación</p>
 						<p>Qué es?</p>
-						<p>Qué contiene?</p>
+						<p>Qué contiene?</p> -->
                     </div>
 
 					 <div id="maderoterapia_img" class="procedure-card" onclick="showcard(this.id);">
@@ -430,22 +498,28 @@
 					
 					<div style="display: none;" id="maderoterapia_info" onclick="showcard(this.id);" class="procedure-card">                        
                         <h3>Maderoterapia</h3>
-						<p>Tiempo de aplicación</p>
+						<!-- <p>Tiempo de aplicación</p>
 						<p>Qué es?</p>
-						<p>Qué contiene?</p>
+						<p>Qué contiene?</p> -->
+						<p style="margin: 18px; font-size: small;">
+							Es una técnica ancestral que utiliza instrumentos de madera especialmente diseñados para realizar masajes y tratamientos en diversas partes del cuerpo. Estos instrumentos, tallados de forma precisa, permiten realizar movimientos específicos que ayudan a estimular la circulación sanguínea y linfática, contribuye a la retención de líquidos, reducir la celulitis y el tejido adiposo, reafirmar la piel, mejorar la tonicidad muscular, modelar el cuerpo, promover la producción de elastina, colágeno y vitamina E, además de aliviar la tensión muscular y reducir el estrés.
+						</p>
                     </div>
 
 
 					 <div  id="vacum_img" class="procedure-card"  onclick="showcard(this.id);">
                         <img src="src/vacum.jpg" alt="Vacum">
-                        <h3>Vacum</h3>
+                        <h3>Vacumterapia</h3>
                     </div>
 
 					<div style="display: none;" id="vacum_info" onclick="showcard(this.id);" class="procedure-card">                        
-                        <h3>Vacum</h3>
-						<p>Tiempo de aplicación</p>
+                        <h3>Vacumterapia</h3>
+						<!-- <p>Tiempo de aplicación</p>
 						<p>Qué es?</p>
-						<p>Qué contiene?</p>
+						<p>Qué contiene?</p> -->
+						<p style="margin: 18px; font-size: small;">
+							La grasa localizada que disuelve la cavitación necesita ser removida y drenada para ello aplicamos vacumterapia que es un tratamiento de medicina estética de origen francés con resultados de éxito extraordinarios en la eliminación de grasa corporal mediante succión. 
+						</p>
                     </div>
 
 
@@ -457,9 +531,12 @@
 
 					<div style="display: none;" id="cavitacion_info" onclick="showcard(this.id);" class="procedure-card">                        
                         <h3>Cavitación</h3>
-						<p>Tiempo de aplicación</p>
+						<!-- <p>Tiempo de aplicación</p>
 						<p>Qué es?</p>
-						<p>Qué contiene?</p>
+						<p>Qué contiene?</p> -->
+						<p style="margin: 18px; font-size: small;">
+							La cavitación es una técnica SIN CIRUGÍA y sin dolor alguno que sirve para eliminar la grasa localizada en el cuerpo disolviendo las células adiposas desde su interior.
+						</p>											
                     </div>
 
 
@@ -470,9 +547,13 @@
 
 					<div style="display: none;" id="lipolaser_info" onclick="showcard(this.id);" class="procedure-card">                        
                         <h3>Lipolaser</h3>
-						<p>Tiempo de aplicación</p>
+
+						<p style="margin: 18px; font-size: small;">
+							Procedimiento cosmético mínimamente invasivo que utiliza la energía del láser para disolver y eliminar la grasa localizada en áreas específicas del cuerpo, como el abdomen, las caderas o los muslos. A diferencia de la liposucción tradicional, el lipoláser también ayuda a tensar la piel en la zona tratada debido a la estimulación de colágeno y a un menor riesgo de complicaciones, resultando en una recuperación más rápida. 
+						</p>
+						<!-- <p>Tiempo de aplicación</p>
 						<p>Qué es?</p>
-						<p>Qué contiene?</p>
+						<p>Qué contiene?</p> -->
                     </div>
 
 
@@ -485,9 +566,18 @@
 
 					<div style="display: none;" id="gluteos_info" onclick="showcard(this.id);" class="procedure-card">                        
                         <h3>Levantamiento de Glúteos</h3>
-						<p>Tiempo de aplicación</p>
+						<!-- <p>Tiempo de aplicación</p>
 						<p>Qué es?</p>
-						<p>Qué contiene?</p>
+						<p>Qué contiene?</p> -->
+					<p style="margin: 18px; font-size: small;">
+							10 sesiones de 50 min <br>
+							2 veces por semana <br>
+							Incluye : <br>
+							Copas colombianas <br>
+							Maderoterapia <br>
+							Uso de aparatología
+
+						</p>
                     </div>
 
 
@@ -498,9 +588,12 @@
 
 					<div style="display: none;" id="relajante_info" onclick="showcard(this.id);" class="procedure-card">                        
                         <h3>Masaje Relajante</h3>
-						<p>Tiempo de aplicación</p>
+						<!-- <p>Tiempo de aplicación</p>
 						<p>Qué es?</p>
-						<p>Qué contiene?</p>
+						<p>Qué contiene?</p> -->
+						<p style="margin: 18px; font-size: small;">
+							 Técnica que emplea movimientos suaves, lentos y rítmicos para aliviar la tensión muscular, mejorar la circulación sanguínea y promover un estado general de bienestar físico y mental
+						</p>
                     </div>
 
 
@@ -512,9 +605,13 @@
 
 					<div style="display: none;" id="radiofrecuencia_info" onclick="showcard(this.id);" class="procedure-card">                        
                         <h3>Radiofrecuencia</h3>
-						<p>Tiempo de aplicación</p>
+
+						<p style="margin: 18px; font-size: small;">
+							Conocido también como contorneado corporal, este potente tratamiento utiliza el calor para penetrar en la grasa y terminar de disolverla para luego ser eliminada más fácilmente. 
+						</p>
+						<!-- <p>Tiempo de aplicación</p>
 						<p>Qué es?</p>
-						<p>Qué contiene?</p>
+						<p>Qué contiene?</p> -->
                     </div>
 
 
@@ -527,30 +624,70 @@
 					
 					<div style="display: none;" id="electroestimulacion_info" onclick="showcard(this.id);" class="procedure-card">                        
                         <h3>Electroestimulación</h3>
-						<p>Tiempo de aplicación</p>
+						<!-- <p>Tiempo de aplicación</p>
 						<p>Qué es?</p>
-						<p>Qué contiene?</p>
+						<p>Qué contiene?</p> -->
+						<p style="margin: 18px; font-size: small;">
+							 Es una opción no invasiva ideal para aquellos que desean desarrollar músculo y esculpir su cuerpo de manera eficaz y sin cirugía. Además de mejorar el tono y la definición muscular
+						</p>
                     </div>
-
 
 
 
 
 
 					<div  id="hollywood_img" class="procedure-card"  onclick="showcard(this.id);">
-                        <img src="src/electroestimulacion.jpg" alt="Hollywood Peel">
+                        <img src="src/hollywood.jpg" alt="Hollywood Peel">
                         <h3>Hollywood Peel</h3>
                     </div>
 
+						
+					<div style="display: none;" id="hollywood_info" onclick="showcard(this.id);" class="procedure-card">                        
+                        <h3>Hollywood Peel</h3>
+						<!-- <p>Tiempo de aplicación</p>
+						<p>Qué es?</p>
+						<p>Qué contiene?</p> -->
+
+						<p style="margin: 18px; font-size: small;">
+							Es un tratamiento láser no invasivo que utiliza una mascarilla de carbón activado y un láser Q-Switched para exfoliar la piel, reducir el tamaño de los poros, unificar el tono, mejorar la textura y estimular la producción de colágeno, logrando un efecto de piel más luminosa e uniforme desde la primera sesión
+						</p>
+                    </div>
+
+
 					<div  id="diodo_img" class="procedure-card"  onclick="showcard(this.id);">
-                        <img src="src/electroestimulacion.jpg" alt="Rejuvenecimiento Laser Diodo">
+                        <img src="src/diodo.jpg" alt="Rejuvenecimiento Laser Diodo">
                         <h3>Rejuvenecimiento Laser Diodo</h3>
                     </div>
 
+						
+					<div style="display: none;" id="diodo_info" onclick="showcard(this.id);" class="procedure-card">                        
+                        <h3>Rejuvenecimiento Laser Diodo</h3>
+						<!-- <p>Tiempo de aplicación</p>
+						<p>Qué es?</p>
+						<p>Qué contiene?</p> -->
+							<p style="margin: 18px; font-size: small;">
+							Además de la depilación láser, el láser de diodo se ha utilizado para tratar lesiones pigmentadas, como manchas solares y léntigos, y para la mejora de la apariencia de cicatrices hipertróficas y queloides.
+
+						</p>
+                    </div>
+
+
 					<div  id="remocion_img" class="procedure-card"  onclick="showcard(this.id);">
-                        <img src="src/electroestimulacion.jpg" alt="Remoción Laser">
+                        <img src="src/remocion.jpg" alt="Remoción Laser">
                         <h3>Remoción Laser</h3>
                     </div>
+
+						
+					<div style="display: none;" id="remocion_info" onclick="showcard(this.id);" class="procedure-card">                        
+                        <h3>Remoción Laser</h3>
+						<!-- <p>Tiempo </p>
+						<p>Qué es?</p>
+						<p>Qué contiene?</p> -->
+						<p style="margin: 18px; font-size: small;">
+							Técnica de láser que sólo puede llevarse a cabo a manos de un especialista. Durante este proceso se elimina el dibujo de la piel por fragmentos para que puedan ser eliminados a través del sistema linfático.
+						</p>
+                    </div>
+
 
 
                 </div>
