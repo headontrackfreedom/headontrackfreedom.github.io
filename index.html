@@ -427,6 +427,21 @@
 					
 					break;
 
+                case "hifu_img":
+					card.style.display = "none";
+					var cardinfo = document.getElementById("hifu_info");
+					cardinfo.style.display = "block";
+			
+					break;
+
+				case "hifu_info":
+					card.style.display = "none";
+					var cardinfo = document.getElementById("hifu_img");
+					cardinfo.style.display = "block";
+					
+					break;
+
+
 					
 		
 		
@@ -685,6 +700,30 @@
 						<p>Qué contiene?</p> -->
 						<p style="margin: 18px; font-size: small;">
 							Técnica de láser que sólo puede llevarse a cabo a manos de un especialista. Durante este proceso se elimina el dibujo de la piel por fragmentos para que puedan ser eliminados a través del sistema linfático.
+						</p>
+                    </div>
+
+                    
+					<div  id="hifu_img" class="procedure-card"  onclick="showcard(this.id);">
+                        <img src="src/hifu.jpg" alt="Remoción Laser">
+                        <h3>HIFU</h3>
+                    </div>
+
+						
+					<div style="display: none;" id="hifu_info" onclick="showcard(this.id);" class="procedure-card">                        
+                        <h3>HIFU</h3>
+						<!-- <p>Tiempo </p>
+						<p>Qué es?</p>
+						<p>Qué contiene?</p> -->
+						<p style="margin: 18px; font-size: small;">
+							Tratamiento no invasivo que utiliza ultrasonido focalizado para estimular colágeno desde las capas más profundas de la piel. <br>
+                            Beneficios: <br>
+                            ✔️ Reafirma y tensa la piel <br>
+                            ✔️ Mejora el contorno del rostro <br>
+                            ✔️ Reduce líneas de expresión <br>
+                            ✔️ Levanta párpados y pómulos <br>
+                            ✔️ Estimula colágeno naturalmente
+
 						</p>
                     </div>
 
