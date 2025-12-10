@@ -37,6 +37,22 @@
 
 				var card = document.getElementById(id);
 				switch (id) {
+
+                case "emsculp_img":
+					card.style.display = "none";
+					var cardinfo = document.getElementById("emsculp_info");
+					cardinfo.style.display = "block";
+			
+					break;
+
+
+                case "hidrofacial_img":
+					card.style.display = "none";
+					var cardinfo = document.getElementById("hidrofacial_info");
+					cardinfo.style.display = "block";
+			
+					break;    
+
 				case "masaje_reductivo_img":
 					card.style.display = "none";
 					var cardinfo = document.getElementById("masaje_reductivo_info");
@@ -456,6 +472,8 @@
                             </div>
                             <input id="city" type="text" placeholder="Ciudad" required>
                             <select id="service" required>
+                                <option value="Emsculp">Emsculp</option>
+                                <option value="Hidrofacial">Hidrofacial</option>                                
                                 <option value="MASAJE REDUCTIVO">Masaje Reductivo</option>
                                 <option value="Limpieza Facial profunda">Limpieza Facial profunda</option>
                                 <option value="Maderoterapia">Maderoterapia</option>
@@ -488,13 +506,27 @@
                 <div class="cards-grid">
 
 
-                      <div id="emsculp_hidrofacial_img" class="procedure-card" onclick="showcard(this.id);">
-                        <img src="src/tratamiento-de-masaje-reductivo.jpeg" alt="Emsculp e Hidrofacial">
-                        <h3>Emsculp e Hidrofacial</h3>
+                      <div id="emsculp_img" class="procedure-card" onclick="showcard(this.id);">
+                        <img src="src/tratamiento-de-masaje-reductivo.jpeg" alt="Emsculp">
+                        <h3>Emsculp</h3>
                     </div>
 
-					<div style="display: none;" id="emsculp_hidrofacial_info" onclick="showcard(this.id);" class="procedure-card">                        
-                        <h3>Emsculp e Hidrofacial</h3>
+					<div style="display: none;" id="emsculp_info" onclick="showcard(this.id);" class="procedure-card">                        
+                        <h3> Emsculp</h3>
+						<p style="margin: 18px; font-size: small;">
+							
+                          Info 
+                        </p>
+						
+                    </div>
+
+                       <div id="hidrofacial_img" class="procedure-card" onclick="showcard(this.id);">
+                        <img src="src/tratamiento-de-masaje-reductivo.jpeg" alt="Hidrofacial">
+                        <h3>Hidrofacial</h3>
+                    </div>
+
+					<div style="display: none;" id="hidrofacial_info" onclick="showcard(this.id);" class="procedure-card">                        
+                        <h3>Hidrofacial</h3>
 						<p style="margin: 18px; font-size: small;">
 							
                           Info 
